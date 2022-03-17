@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&family=Roboto:wght@300&family=Smooch+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <div class="is-full-widescreen has-background-primary">
+        <div class="container">
+            <div class="columns has-text-left-desktop">
+                <div class="column is-one-fifth-desktop title">
+                    <div class="logo">
+                        <div class="logo-img"><img src="./img/logo.png" alt=""></div>
+                        <div class="logo-name">
+                            <span class="is-size-3" style="color: var(--color-danger);">PHT</span>
+                        </div>
+                    </div>
+                    <div class="content has-text-left ">
+                        <ul class="subtitle ">
+                            <li><a href="#"><button class="button has-background-primary is-medium "><span class="material-icons md-dark ">dashboard</span><span class="is-text">Dashboard</span></button></a>
+                            </li>
+                            <li><a href="#"><button class="button has-background-primary is-medium "><span class="material-icons md-dark ">person</span><span class="is-text">Customers</span></button></a>
+                            </li>
+                            <li><a href="#"><button class="button has-background-primary is-medium "><span class="material-icons md-dark ">list_alt</span><span class="is-text">Orders</span></button></a>
+                            </li>
+                            <li><a href="#"><button class="button has-background-primary is-medium "><span class="material-icons md-dark ">analytics</span><span class="is-text">Analytics</span></button></a>
+                            </li>
+                            <li><a href="#"><button class="button has-background-primary is-medium "><span class="material-icons md-dark ">email</span><span class="is-text">Messages</span> <span class="m-count has-text-white">28</span></button></a>
+                            </li>
+                            <li><a href="#"><button class="button has-background-primary is-medium "><span class="material-icons md-dark ">category</span><span class="is-text">Products</span></button></a>
+                            </li>
+                            <li><a href="#"><button class="button has-background-primary is-medium "><span class="material-icons md-dark ">report_problem</span><span class="is-text">Report</span></button></a>
+                            </li>
+                            <li><a href="#"><button class="button has-background-primary is-medium "><span class="material-icons md-dark ">settings</span><span class="is-text">Setting</span></button></a>
+                            </li>
+                            <li><a href="#"><button class="button has-background-primary is-medium "><span class="material-icons md-dark ">add</span><span class="is-text">Add product</span></button></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="title mt-6 has-text-weight-semibold is-uppercase">Dashboard</div>
+                    <div class="date"><input type="date" id="theDate"></div>
+                    <div class="columns">
+                        <div class="column">
+                            <div class="box">
+                                <span class="insights2 material-icons md-dark">
+                                    signal_cellular_alt
+                                    </span>
+                                <div class="percent">
+                                    <div class="c100 p12 small">
+                                        <span>12%</span>
+                                        <div class="slice">
+                                            <div class="bar"></div>
+                                            <div class="fill"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h3 class="has-text-weight-medium is-size-6-desktop is-size-5-fullhd">Total Income</h3>
+                                <h1 class="has-text-weight-bold">$25,024</h1>
+                                <div class="is-text is-size-7-desktop has-text-right">Last 9 hours</div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="box">
+                                <span class="insights3 material-icons md-dark">
+                                    currency_exchange
+                                    </span>
+                                <div class="percent">
+                                    <div class="c100 p12 small">
+                                        <span>12%</span>
+                                        <div class="slice">
+                                            <div class="bar"></div>
+                                            <div class="fill"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h3 class="has-text-weight-medium is-size-6-desktop is-size-5-fullhd">Total Expenses</h3>
+                                <h1 class="has-text-weight-bold ">$25,024</h1>
+                                <div class="is-text is-size-7-desktop has-text-right">Last 9 hours</div>
+
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="box">
+                                <span class="insights material-icons md-dark">
+                                    trending_up
+                                    </span>
+                                <div class="percent">
+                                    <div class="c100 p12 small">
+                                        <span>12%</span>
+                                        <div class="slice">
+                                            <div class="bar"></div>
+                                            <div class="fill"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h3 class="has-text-weight-medium is-size-6-desktop is-size-5-fullhd">Total Expenses</h3>
+                                <h1 class="has-text-weight-bold ">$25,024</h1>
+                                <div class="is-text is-size-7-desktop has-text-right">Last 9 hours</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="title is-size-4 has-text-weight-semibold is-upper-roman">Recent Orders</div>
+                    <div class="box">
+                        <table class="table is-hoverable is-fullwidth">
+                            <thead class="is-size-5">
+                                <tr>
+                                    <th style="color: var(--color-danger);">Product Name</th>
+                                    <th style="color: var(--color-danger);">Product Number</th>
+                                    <th style="color: var(--color-primary);">Payment</th>
+                                    <th style="color:var(--color-danger);">Stutus</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Apple Iphone 13 Promax</td>
+                                    <td>85631</td>
+                                    <td style="color: var(--color-primary);">Paid</td>
+                                    <td>Pending</td>
+                                    <td>Details</td>
+                                </tr>
+                                <tr>
+                                    <td>Apple Iphone 13 Pro</td>
+                                    <td>85630</td>
+                                    <td>Refunded</td>
+                                    <td>Declined</td>
+                                    <td>Details</td>
+                                </tr>
+                                <tr>
+                                    <td>Apple Iphone 13</td>
+                                    <td>4937</td>
+                                    <td>Due</td>
+                                    <td>Pending</td>
+                                    <td>Details</td>
+                                </tr>
+                                <tr>
+                                    <td>Apple Iphone 12 Promax</td>
+                                    <td>85878</td>
+                                    <td style="color: var(--color-primary);">Paid</td>
+                                    <td style="color: var(--color-danger);">Delivered</td>
+                                    <td>Details</td>
+                                </tr>
+                                <tr>
+                                    <td>Apple Iphone 12 Pro</td>
+                                    <td>85631</td>
+                                    <td>Due</td>
+                                    <td>Pending</td>
+                                    <td>Details</td>
+                                </tr>
+                                <tr>
+                                    <td>Apple Iphone 12</td>
+                                    <td>85631</td>
+                                    <td>Due</td>
+                                    <td>Pending</td>
+                                    <td>Details</td>
+                                </tr>
+                                <tr>
+                                    <td>Apple Iphone 11 Promax</td>
+                                    <td>85631</td>
+                                    <td>Due</td>
+                                    <td>Pending</td>
+                                    <td>Details</td>
+                                </tr>
+                                <tr>
+                                    <td>Apple Iphone 11 Pro</td>
+                                    <td>85631</td>
+                                    <td style="color: var(--color-primary);">Paid</td>
+                                    <td>Pending</td>
+                                    <td>Details</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- <div class="column is-two-fifth-fullhd is-one-fifth-desktop title is-0-tablet">
+                    <div class="box">
+                        <ul>
+                            <li></li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                            <li>5</li>
+                            <li>6</li>
+                            <li>7</li>
+                            <li>8</li>
+                            <li>9</li>
+                            <li>9</li>
+                        </ul>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    var date = new Date();
+
+    var day = date.getDate();
+    var month = date.getMonth() + 1;
+    var year = date.getFullYear();
+
+    if (month < 10) month = "0" + month;
+    if (day < 10) day = "0" + day;
+
+    var today = year + "-" + month + "-" + day;
+    document.getElementById("theDate").value = today;
+</script>
+
+</html>
